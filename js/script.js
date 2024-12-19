@@ -16,19 +16,7 @@ $(document).ready(function () {
     }
     // Scroll up Button script end
 
-    // Fade In & Fade Out Elements on Scroll script start
-    $(".fadein").each(function (i) {
-      var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-      var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-      if (bottom_of_window > bottom_of_element) {
-        $(this).addClass("showme");
-      }
-      if (bottom_of_window < bottom_of_element) {
-        $(this).removeClass("showme");
-      }
-    });
-    // Fade In & Fade Out Elements on Scroll script end
+ 
   });
 
   // Scroll up Button script start
@@ -63,12 +51,7 @@ if ($(".typing2").length) {
     console.warn("Element with class 'typing2' not found.");
 }
   
-  // toggle menu/navbar script start
-  $(".menu-btn").click(function () {
-    $(".navbar .menu").toggleClass("active");
-    $(".menu-btn i").toggleClass("active");
-  });
-  // toggle menu/navbar script end
+ 
 
   // owl carousel script start
   $(".carousel").owlCarousel({
@@ -81,7 +64,7 @@ if ($(".typing2").length) {
         items: 1,
         nav: false,
       },
-      600: {
+      3000: {
         items: 2,
         nav: false,
       },
